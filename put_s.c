@@ -1,17 +1,25 @@
 #include "main.h"
 
+/*
+ * put_s: function that prints a string
+ * @indx: the buffer index
+ * @string: pointet to the string to be printed
+ * description: a function that prints and returns the strings from the buffer
+ * return: r_value
+ */
+
 int put_s(char *string)
 {
 	int indx = 0, r_value = 0;
 
-	if(string)
+	if (string)
 	{
-		while (string[i] != '\0')
+		while (string[indx] != '\0')
 		{
-			putchr(string[i]);
+			putchr(string[indx]);
 			r_value += 1;
-			i++;
+			indx++;
 		}
 	}
-	return(r_value);
+	return (r_value);
 }
